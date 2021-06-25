@@ -15,8 +15,32 @@ const rl = readline.createInterface({
 const rockPaperScissors = (hand1, hand2) => {
 
   // Write code here
+  //---------------------------------------- to run game node main js in terminal ctrl C to kill program
+  //hand1.trim() hand2.trim()
+  //hand1==hand2
+  //npm test main.js to run tests
   // Use the unit test to see what is expected
-
+  if (hand1 == hand2){
+    return "It's a tie!"
+  }
+  else if (hand1.trim().toLowerCase() == 'rock' && hand2.trim().toLowerCase() == 'scissors'){
+    return "Hand one wins!"
+  }
+  else if (hand1.trim().toLowerCase() == 'rock' && hand2.trim().toLowerCase() == 'paper'){
+    return "Hand two wins!"
+  }
+  else if (hand1.trim().toLowerCase() == 'paper' && hand2.trim().toLowerCase() == 'rock'){
+    return "Hand one wins!"
+  }
+  else if (hand1.trim().toLowerCase() == 'paper' && hand2.trim().toLowerCase() == 'scissors'){
+    return "Hand two wins!"
+  }
+  else if (hand1.trim().toLowerCase() == 'scissors' && hand2.trim().toLowerCase() == 'paper'){
+    return "Hand one wins!"
+  }
+  else if (hand1.trim().toLowerCase() == 'scissors' && hand2.trim().toLowerCase() == 'rock'){
+    return "Hand two wins!"
+  }
 }
 
 // the first function called in the program to get an input from the user
